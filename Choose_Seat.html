@@ -1,0 +1,166 @@
+<html>
+	<head>
+		<title>Book_tickets</title>
+	<style>
+		input[type="checkbox"]{
+			
+			width: 20px;
+			height: 20px;
+			appearance: none;
+			background-color: white;
+			border: 2px solid gray;
+			cursor: pointer;
+			border-radius: 10px;
+		}
+		input[type="checkbox"]:checked{
+			background-color: green;
+			border: 2px solid white;
+		}
+		#screen{
+			background-color: aqua;
+		}
+		#alpha{
+			padding: 10px;
+			color: black;
+			background-color: brown;
+			font-size: 20;
+			font-family: Arial;
+		}
+		td{
+			font-size: 20;
+			background-color: gray;
+			text-shadow: 1px 1px;
+		}
+		#button{
+			width: 100;
+			height: 50;
+			background-color: burlywood;
+			color: white;
+			font-size: 25;
+			font-weight: bold;
+			border: 10px;
+			border-radius: 15px;	
+		}
+		
+		h1,h3{
+			text-align: center;
+			color: blue;
+			font-family: sans-serif;
+			font-weight: bold;
+			
+		}
+	</style>
+	</head>
+	<body>
+		<div><h1>Your Tickets on the Way! <span id="display-mvi"> </span></h1></div>
+		<div><h3>CHOOSE YOUR SEAT</h3></div>
+			<script>
+				const params = new URLSearchParams(window.location.search);
+				document.getElementById("display-mvi").textContent = params.get("username");
+			</script>
+		<div>
+			<form action="Successful.html">
+			<table border="10" align="center">
+				<tr>
+					<td id="alpha">A</td>
+					<td><input type="checkbox">1</td>
+					<td><input type="checkbox">2</td>
+					<td><input type="checkbox">3</td>
+					<td><input type="checkbox">4</td>
+					<td><input type="checkbox">5</td>
+					<td><input type="checkbox">6</td>
+					<td><input type="checkbox">7</td>
+					<td><input type="checkbox">8</td>
+					<td><input type="checkbox">9</td>
+					<td><input type="checkbox">10</td>
+				</tr>
+				<tr>
+					<td id="alpha">B</td>
+					<td><input type="checkbox">1</td>
+					<td><input type="checkbox">2</td>
+					<td><input type="checkbox">3</td>
+					<td><input type="checkbox">4</td>
+					<td><input type="checkbox">5</td>
+					<td><input type="checkbox">6</td>
+					<td><input type="checkbox">7</td>
+					<td><input type="checkbox">8</td>
+					<td><input type="checkbox">9</td>
+					<td><input type="checkbox">10</td>
+				</tr>
+				<tr>
+					<td id="alpha">C</td>
+					<td><input type="checkbox">1</td>
+					<td><input type="checkbox">2</td>
+					<td><input type="checkbox">3</td>
+					<td><input type="checkbox">4</td>
+					<td><input type="checkbox">5</td>
+					<td><input type="checkbox">6</td>
+					<td><input type="checkbox">7</td>
+					<td><input type="checkbox">8</td>
+					<td><input type="checkbox">9</td>
+					<td><input type="checkbox">10</td>
+				</tr>
+				<tr>
+					<td id="alpha">D</td>
+					<td><input type="checkbox">1</td>
+					<td><input type="checkbox">2</td>
+					<td><input type="checkbox">3</td>
+					<td><input type="checkbox">4</td>
+					<td><input type="checkbox">5</td>
+					<td><input type="checkbox">6</td>
+					<td><input type="checkbox">7</td>
+					<td><input type="checkbox">8</td>
+					<td><input type="checkbox">9</td>
+					<td><input type="checkbox">10</td>
+				</tr>
+				<tr>
+					<td id="alpha">E</td>
+					<td><input type="checkbox">1</td>
+					<td><input type="checkbox">2</td>
+					<td><input type="checkbox">3</td>
+					<td><input type="checkbox">4</td>
+					<td><input type="checkbox">5</td>
+					<td><input type="checkbox">6</td>
+					<td><input type="checkbox">7</td>
+					<td><input type="checkbox">8</td>
+					<td><input type="checkbox">9</td>
+					<td><input type="checkbox">10</td>
+				</tr>
+				<tr>
+					<td id="alpha">F</td>
+					<td><input type="checkbox">1</td>
+					<td><input type="checkbox">2</td>
+					<td><input type="checkbox">3</td>
+					<td><input type="checkbox">4</td>
+					<td><input type="checkbox">5</td>
+					<td><input type="checkbox">6</td>
+					<td><input type="checkbox">7</td>
+					<td><input type="checkbox">8</td>
+					<td><input type="checkbox">9</td>
+					<td><input type="checkbox">10</td>
+				</tr>
+				<tr>
+					<td id="alpha">G</td>
+					<td><input type="checkbox">1</td>
+					<td><input type="checkbox">2</td>
+					<td><input type="checkbox">3</td>
+					<td><input type="checkbox">4</td>
+					<td><input type="checkbox">5</td>
+					<td><input type="checkbox">6</td>
+					<td><input type="checkbox">7</td>
+					<td><input type="checkbox">8</td>
+					<td><input type="checkbox">9</td>
+					<td><input type="checkbox">10</td>
+				</tr>
+				<tr>
+					<td id='screen' align="center" colspan="11">SCREEN</td>
+				</tr>
+				<tr>
+					<td align="center" colspan="11"><input id="button" type="submit" value="Done"></td>
+				</tr>
+			</table>
+			</form>
+		</div>
+	</body>
+
+</html>

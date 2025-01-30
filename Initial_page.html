@@ -1,0 +1,70 @@
+<html>
+    <head><title>Ticket_Booker</title></head>
+    <style>
+        body{
+            background-color: burlywood;
+            margin-top: 200px;
+        }
+        #forms{
+            text-decoration: None;
+        }
+        td{
+            font-family: Arial;
+            font-size: 20;
+            text-align: right;
+            color: black;
+            size: 20;
+        }
+        #button{
+            width: 100;
+            color: black;
+            font-size: 20px;
+            background-color: silver; 
+            
+            padding: 10;
+        }
+        #book_button{
+            width: 150;
+            color: black;
+            font-size: 20px;
+            background-color: silver;
+            padding: 10;
+        }
+        #textinput{
+            height: 40px;
+            width: 400;
+        }
+        #header{
+            text-align: center;
+            text-shadow: 2px 1px 1px white;
+            font-family: fantasy;
+        }
+    </style>
+    <body>
+        <div id="header"><h1>Welcome to INOX cinemas</h1></div>
+        <div id="forms">
+            <form action="Choose_movie.html" method="GET">
+                <table border="0" cellpadding="0" align="center">
+                    <tr>
+                        <td>Name :</td>
+                        <td colspan="2"><input id="textinput" type="text" name="username"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile No : </td>
+                        <td colspan="2"><input id="textinput" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Email :</td>
+                        <td colspan="2"><input id="textinput" type="email"></td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="3">
+                            <input id="book_button" type="submit" value="Book Ticket">
+                            <input id="button" type="reset" value="Clear">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
